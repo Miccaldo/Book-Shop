@@ -1,0 +1,11 @@
+.books-container{
+    margin-top: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.home-container{
+    position: relative;
+}

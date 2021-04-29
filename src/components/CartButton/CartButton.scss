@@ -1,0 +1,21 @@
+$cart_top: 10px;
+$cart_right: 50px;
+
+.cart-button{
+    position: absolute !important;
+    right: $cart_right;
+    top: $cart_top;
+    z-index: 1;
+}
+
+.cart-button-label{
+    position: absolute !important;
+    right: $cart_right + 10px;
+    top: $cart_top + 5px;
+    z-index: 2;
+    font-size: 8px !important;
+    padding: 3px !important;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}

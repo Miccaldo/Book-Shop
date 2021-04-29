@@ -1,0 +1,37 @@
+$cart_width: 600px;
+
+.cart-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-header{
+    text-align: center !important;
+    width: $cart_width;
+}
+
+.cart-table{
+    width: $cart_width;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.cart-product-image{
+    height: 100px;
+    display: inline-block !important;
+    margin-right: 20px;
+}
+
+.cart-product-title{
+    display: inline-block !important;
+    font-weight: normal !important;
+    width: 200px;
+}
+
+.ui.table thead tr:first-child > th {
+    position: sticky !important;
+    top: 0;
+    z-index: 2;
+}
