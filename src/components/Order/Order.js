@@ -51,9 +51,9 @@ function Order(props) {
       <Segment>
         <Label className='order-header'>Purchase order form</Label>
         <Form className='order-form'>
-          <InputOrder name={'first_name'} fluid label='First name' placeholder='First name' onChange={handleChange} validation={/^([a-zA-Z]{4,})*$/g} check_valid={check_valid} onValid={handleValid}/>
-          <InputOrder name={'last_name'} fluid label='Last name' placeholder='Last name' onChange={handleChange} validation={/^([a-zA-Z]{5,})*$/g} check_valid={check_valid} onValid={handleValid}/>
-          <InputOrder name={'city'} fluid label='City' placeholder='City' onChange={handleChange} validation={/^([a-zA-Z]{3,})*$/g} check_valid={check_valid} onValid={handleValid}/>
+          <InputOrder name={'first_name'} fluid label='First name' placeholder='First name' onChange={handleChange} validation={/^([A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{4,})*$/g} check_valid={check_valid} onValid={handleValid}/>
+          <InputOrder name={'last_name'} fluid label='Last name' placeholder='Last name' onChange={handleChange} validation={/^([A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{5,})*$/g} check_valid={check_valid} onValid={handleValid}/>
+          <InputOrder name={'city'} fluid label='City' placeholder='City' onChange={handleChange} validation={/^([A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]{3,})*$/g} check_valid={check_valid} onValid={handleValid}/>
           <InputOrder name={'zip_code'} fluid label='Zip code' placeholder='Zip code' onChange={handleChange} validation={/^(\d{2}-\d{3})*$/g} check_valid={check_valid} onValid={handleValid}/>
           <Button type='submit' onClick={handleClick}>I order and pay!</Button>
         </Form>
